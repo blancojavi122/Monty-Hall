@@ -39,10 +39,10 @@ class MontyHall {
         }
 
         /// Resúmen de estadísticas
-        int porcentajeMantener = (victoriasManteniendo /  partidas) * 100;
-        int porcentajeCambiar = (victoriasCambiando /  partidas) * 100;
+        double pctMantener = (victoriasManteniendo * 100) / partidas; //OTRA OPCIÓN (double(victoriasmanteniendo) / partidas) * 100 
+        double pctCambiar = (victoriasCambiando * 100) / partidas;    
         System.out.println("Partidas " + partidas);
-        System.out.println("Victorias manteniendo: " + victoriasManteniendo + "," +  porcentajeMantener);
-        System.out.println("Victorias cambiando : " + victoriasCambiando + "," + porcentajeCambiar);
+        System.out.println("Victorias manteniendo: " + victoriasManteniendo + "," +  pctMantener);
+        System.out.println("Victorias cambiando : " + victoriasCambiando + "," + pctCambiar);
     }
 }
